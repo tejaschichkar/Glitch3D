@@ -14,19 +14,19 @@ public class TeleportScript : MonoBehaviour
     {
         if (collision.gameObject == lwall)
         {
-            Player.transform.position = new Vector3 (3.6f, 0.4f, Player.transform.position.z);
+            Player.transform.position = new Vector3 (3.4f, 1.016f, Player.transform.position.z);
         }
         if (collision.gameObject == rwall)
         {
-            Player.transform.position = new Vector3 (-3.6f, 0.4f, Player.transform.position.z);
+            Player.transform.position = new Vector3 (-3.4f, 1.016f, Player.transform.position.z);
         }
         if (collision.gameObject == ewall)
         {
-            Player.transform.position = new Vector3 (Player.transform.position.x, 0.4f, -4.25f);
+            Player.transform.position = new Vector3 (Player.transform.position.x, 1.016f, -4.10f);
         }
         if (collision.gameObject == swall)
         {
-            Player.transform.position = new Vector3 (Player.transform.position.x, 0.4f, 13f);
+            Player.transform.position = new Vector3 (Player.transform.position.x, 1.016f, 12.90f);
         }
         Debug. Log("Object that collided with me: " + collision.gameObject.name);
     }
